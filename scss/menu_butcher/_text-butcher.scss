@@ -1,0 +1,38 @@
+.text-butcher {
+    width: 1442px;
+    height: 162px;
+    margin-bottom: 20px;
+    &-content {
+        width: 770px;
+        height: 162px;
+    }
+    &-desc {
+        width: 483px;
+        height: 142px;
+        margin-left: 479.5px;
+    }
+    &-p {
+        width: 483px;
+        height: 61px;
+        color: #d7d7d7;
+        font-family: "Baskerville No 2",serif;
+        font-size: 15px;
+        line-height: 30.4001px;
+        margin: 0px 0px 20px;
+        text-align: center;
+        border: none;
+    }
+    &-em {
+        width: 483px;
+        height: 61px;
+        color: #d7d7d7;
+        font-family: "Baskerville No 2",serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30.4001px;
+        margin: 0px 0px 20px;
+        text-align: center;
+        font-style: italic;
+        border: none;
+    }
+}

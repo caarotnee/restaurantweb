@@ -1,0 +1,23 @@
+.footer {
+    width: 1441px;
+    height: 58px;
+    padding: 20px;
+    &-wrapper {
+        width: 1170px;
+        height: 18px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: center;
+    }
+    &-left,
+    &-middle,
+    &-right {
+        width: 380px;
+        height: 18px;
+        padding: 0 15px;
+        a {
+            color: white;
+        }
+    }
+}

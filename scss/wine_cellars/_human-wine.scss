@@ -1,0 +1,70 @@
+.human-wine {
+    width: 1441px;
+    height: 430px;
+    // margin: 65px 0px -51px;s
+    &-h2 {
+        font-family: "Baskerville No 2", serif;
+        line-height: 39.2px;
+        color: #ededed;
+        font-size: 28px;
+        width: 651px;
+        height: 48px;
+        text-align: left;
+        font-weight: 400;
+        position: relative;
+        left: 400px;
+        text-align: center;
+        margin-top: 70px;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        width: 1441px;
+        height: 338px;
+        // padding: 50px 0px;
+        text-align: center;
+        background-color: #000000;
+    }
+    &-img {
+        margin-top: 50px;
+        // padding: 0px 0px 0px 30px;
+        cursor: pointer;
+        width: 338px;
+        height: 338px;
+    }
+    &-wrapper {
+        width: 338px;
+        height: 338px;
+        &:hover {
+            background-color: #000000;
+            opacity: 0.6;
+        }
+    }
+    &-text {
+        position: relative;
+        text-align: center;
+        width: 300px;
+        height: 106px;
+        color: #ededed;
+        font-family: "Baskerville No 2", serif;
+        font-size: 30px;
+        line-height: 52.8px;
+        margin: 0px 0px 8px;
+        text-shadow: #000000 2px 2px 10px;
+        font-weight: 400;
+
+        left: 30px;
+    }
+    &-img1{
+        margin-right: 30px;
+        width: 338px;
+        height: 338px;
+        background: url(https://cdn.shopify.com/s/files/1/0280/1683/6706/collections/Hans_Vinding-Diers_720x.jpg?v=1591225684) no-repeat center center/cover;
+    }
+    &-img2{
+        margin-left: 30px;
+        width: 338px;
+        height: 338px;
+        background: url(https://cdn.shopify.com/s/files/1/0280/1683/6706/collections/Matias_Michelini_540x.jpg?v=1592583920) no-repeat center center/cover;
+    }
+}

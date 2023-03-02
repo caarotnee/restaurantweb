@@ -1,0 +1,187 @@
+.table-price {
+    width: 1442px;
+    height: 721px;
+    margin-top: 20px;
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        width: 1442px;
+        height: 721px;
+    }
+    &-right {
+        width: 721px;
+        height: 600px;
+        margin-bottom: 40px;
+    }
+    &-content {
+        width: 721px;
+        height: 452px;
+    }
+    &-product {
+        width: 360px;
+        height: 452px;
+        margin-left: 150px;
+        margin-top: 70px;
+    }
+    &-h1 {
+        color: #ededed;
+        font-family: "Baskerville No 2";
+        font-size: 34px;
+        line-height: 47.6px;
+        margin: 0px 0px 20px 0px;
+        font-weight: 400;
+    }
+    &-desc {
+        width: 360px;
+        height: 54px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        p {
+            color: #d7d7d7;
+            font-family: "Baskerville No 2";
+            font-size: 17px;
+            line-height: 27.2px;
+            border: none;
+        }
+    }
+    &-form {
+        height: 280px;
+        margin-bottom: 30px;
+    }
+    &-wrappers {
+        display: flex;
+        width: 300px;
+        height: 55px;
+        margin-bottom: 10px;
+    }
+    &-form-wrapper {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 55px;
+        padding: 6px 3px 6px 12px;
+        border: 1px solid #242424;
+        border-radius: 5px;
+    }
+    &-label {
+        padding: 6px 0px 9px 0px;
+        color: #ededed;
+        font-size: 17px;
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d7d7d7;
+        line-height: 1.6;
+        &::after {
+            content: ":";
+            padding-left: 2px;
+        }
+    }
+    &-option {
+        color: #ededed;
+        background-color: transparent;
+        border-radius: 0;
+        padding-bottom: 2px;
+        padding-left: 6px;
+        padding-top: 2px;
+        flex-grow: 1;
+        margin-left: 5px;
+        border: 0 none;
+    }
+    &-pr {
+        position: relative;
+        left: 70px;
+        line-height: 1.6;
+        border: none;
+        span {
+            color: #d7d7d7;
+            font-size: 24px;
+            line-height: 38.4px;
+            text-align: right;
+            font-family: "Baskerville No 2", serif;
+        }
+        sub {
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 23px;
+            color: #d7d7d7;
+            font-family: "Baskerville No 2", serif;
+            font-weight: 400;
+        }
+    }
+    &-quantity-wr {
+        width: 320px;
+        height: 50px;
+        margin-bottom: 10px;
+        border: 1px solid #242424;
+        border-radius: 2px;
+        padding: 6px 3px 6px 12px;
+    }
+    &-quantity {
+        color: #ededed;
+        padding: 2px 0;
+        &::after {
+            content: "-";
+            padding-left: 6px;
+        }
+    }
+    &-input {
+        color: #ededed;
+        background-color: transparent;
+        border-radius: 0;
+        flex-grow: 1;
+        border: 0 none;
+        max-width: 100%;
+        font-size: 20px;
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.6;
+        width: 200px;
+        height: 27px;
+        padding-top: 10px;
+    }
+    &-btn {
+        width: 320px;
+        padding: 18px 30px;
+        border-radius: 2px;
+        border: 1px solid #cfcfcf;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        &:hover {
+            color: #000000;
+            opacity: 0.8;
+        }
+    }
+    &-text {
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+        font-size: 16px;
+        color: #cfcfcf;
+    }
+    &-btnpay {
+        margin-top: 10px;
+        width: 320px;
+        padding: 18px 30px;
+        border-radius: 2px;
+        border: 1px solid #cfcfcf;
+        transition: all 0.2s linear;
+        background-color: #cfcfcf;
+        cursor: pointer;
+        &:hover {
+            color: #000000;
+            opacity: 0.8;
+        }
+    }
+    &-textpay {
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+        font-size: 16px;
+        color: #000;
+        cursor: pointer;
+    }
+}

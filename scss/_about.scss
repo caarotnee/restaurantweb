@@ -1,0 +1,35 @@
+.about {
+    width: 1441px;
+    height: 559px;
+    margin: 65px 0px -51px;
+    display: flex;
+    justify-content: center;
+    &-content {
+        display: flex;
+        justify-content: center;
+        width: 1170px;
+        height: 445px;
+        padding: 50px 0px;
+        text-align: center;
+    }
+    &-text {
+        width: 570px;
+        height: 358px;
+        padding: 0px 15px;
+        text-align: center;
+    }
+    &-img {
+        width: 570px;
+        height: 445px;
+        padding: 0px 15px;
+        text-align: center;
+    }
+    &-ic {
+        width: 540px;
+        height: 87px;
+        font-size: 32px;
+        line-height: 32px;
+        padding: 30px 0px 25px;
+        text-align: center;
+    }
+}

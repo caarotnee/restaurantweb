@@ -1,0 +1,176 @@
+.cart {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 1442px;
+    overflow: auto;
+    z-index: 110;
+    background-color: rgba($color: #333, $alpha: 0.5);
+    &-wrapper {
+        position: relative;
+        height: 100vh;
+        width: 350px;
+        right: -1090px;
+        top: 0;
+        background-color: #000000;
+        // text-align: center;
+        padding: 12px 0px;
+        z-index: 111;
+    }
+
+    background-color: rgba(0, 0, 0, 0.4);
+    table {
+        width: 350px;
+    }
+    // &-title-1 {
+    //     text-align: center;
+    //     width: 162px;
+    // }
+    // &-title-4{
+    //     position: relative;
+    //     right: 10px;
+    // }
+    &-header {
+        button {
+            i {
+                position: relative;
+                color: #d6d6d6;
+                display: inline-block;
+                font-size: 17.9999px;
+                line-height: 28.7999px;
+                text-align: center;
+                left: 300px;
+            }
+        }
+    }
+    &-name {
+        position: relative;
+        bottom: 20px;
+    }
+    &-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 162px;
+    }
+    &-name {
+        font-size: 17px;
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d7d7d7;
+        line-height: 1.6;
+        right: 5px;
+    }
+    &-price {
+        p {
+            border: none;
+            width: 0;
+            height: 0;
+            padding: 0px;
+            text-align: center;
+            border-bottom: none;
+            font-size: 14px;
+            span {
+                font-size: 17px;
+                font-family: "Baskerville No 2", serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #d7d7d7;
+                line-height: 1.6;
+            }
+            sub {
+                font-size: 17px;
+            }
+        }
+        position: relative;
+        top: -28px;
+        left: -40px;
+    }
+    &-input {
+        input {
+            color: #ededed;
+            background-color: transparent;
+            border-radius: 5px;
+            flex-grow: 1;
+            border: 1px solid #d7d7d7;
+            font-size: 17px;
+            font-family: "Baskerville No 2", serif;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1.6;
+            width: 200px;
+            // height: 27px;
+            // padding: 0 10px;
+            padding-left: 10px;
+            position: relative;
+            right: 130px;
+            bottom: 15px;
+        }
+    }
+    &-del {
+        position: relative;
+        left: -13px;
+        bottom: 28px;
+    }
+    &-pr-total {
+        margin-left: 70px;
+        p {
+            border: none;
+            width: 0;
+            height: 0;
+            padding: 0px;
+            text-align: center;
+            border-bottom: none;
+            font-size: 25px;
+            color: #d7d7d7;
+        }
+        span {
+            font-size: 25px;
+            font-family: "Baskerville No 2", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #d7d7d7;
+            line-height: 1.6;
+        }
+        sub {
+            font-size: 25px;
+            font-family: "Baskerville No 2", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #d7d7d7;
+            line-height: 1.6;
+        }
+    }
+    &-finish-ord {
+        position: relative;
+        padding: 10px 30px;
+        border-radius: 2px;
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+        border: 1px solid transparent;
+        background-color: #cfcfcf;
+        color: #000;
+        top: 70px;
+        left: 90px;
+    }
+}
+.cart table tr td {
+    margin-bottom: 20px;
+    padding: 12px 0;
+}
+td {
+    font-size: 17px;
+    font-family: "Baskerville No 2", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #d7d7d7;
+    line-height: 1.6;
+}

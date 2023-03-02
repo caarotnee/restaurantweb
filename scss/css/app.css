@@ -1,0 +1,6099 @@
+.header {
+  min-height: 773px;
+  position: relative;
+}
+.header-container {
+  width: 1441px;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-buttons {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 0 34px;
+  text-align: center;
+}
+.header-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+  right: 355px;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #b3bbce;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 99;
+  width: 550px;
+  bottom: 750px;
+  right: -380px;
+}
+.hero-img .img {
+  width: 590px;
+  height: 590px;
+  animation: imgRotate 50s linear infinite;
+}
+@keyframes imgRotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.4814814815;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+.header-heading {
+  color: #ffffff;
+  font-family: "Playball", cursive;
+  font-size: 120px;
+  font-weight: 400;
+  width: 691px;
+  height: 150px;
+  text-align: center;
+}
+
+.header-second-heading {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 30px;
+  font-style: italic;
+  text-transform: capitalize;
+  text-align: center;
+  width: 691px;
+  height: 34px;
+}
+
+hr {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
+
+/* ============ End header ================ */
+/* about */
+.about-content {
+  background-color: #ffffff;
+}
+
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  width: 360px;
+  height: 39px;
+  padding: 10px 0px;
+  text-align: left;
+  border-bottom: 1px solid;
+  font-size: 14px;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.about {
+  width: 1441px;
+  height: 559px;
+  margin: 65px 0px -51px;
+  display: flex;
+  justify-content: center;
+}
+.about-content {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+  height: 445px;
+  padding: 50px 0px;
+  text-align: center;
+}
+.about-text {
+  width: 570px;
+  height: 358px;
+  padding: 0px 15px;
+  text-align: center;
+}
+.about-img {
+  width: 570px;
+  height: 445px;
+  padding: 0px 15px;
+  text-align: center;
+}
+.about-ic {
+  width: 540px;
+  height: 87px;
+  font-size: 32px;
+  line-height: 32px;
+  padding: 30px 0px 25px;
+  text-align: center;
+}
+
+.reservation {
+  width: 1441px;
+  height: 1137px;
+  padding: 50px 0px;
+  text-align: center;
+}
+.reservation-background_content {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 570px;
+}
+.reservation-background_content::after {
+  content: "";
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.reservation-content {
+  height: 453px;
+  margin: 65px 136px -51px;
+}
+.reservation-wrapper {
+  width: 1140px;
+  height: 453px;
+  padding: 50px 0px;
+  text-align: center;
+}
+.reservation-forms {
+  width: 1140px;
+  height: 453px;
+}
+.reservation-form {
+  width: 1140px;
+  height: 453px;
+}
+.reservation-row {
+  height: 453px;
+  text-align: center;
+  display: flex;
+}
+.reservation-left {
+  width: 780px;
+  height: 353px;
+  padding: 0px 15px;
+}
+.reservation-name, .reservation-address {
+  width: 390px;
+  height: 304px;
+  padding: 0px 15px;
+  text-align: center;
+}
+.reservation-list {
+  display: flex;
+  width: 780px;
+  height: 353px;
+  text-align: center;
+}
+.reservation-bt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 48px;
+  border-radius: 3px;
+  padding: 15px;
+  bottom: 50px;
+  left: 15px;
+}
+.reservation-right {
+  width: 390px;
+  height: 265px;
+  padding: 0px 15px;
+  text-align: center;
+}
+.reservation-text {
+  width: 360px;
+  height: 265px;
+  text-align: center;
+}
+.reservation-hr {
+  width: 360px;
+  height: 1px;
+  border-style: solid none none;
+  border-width: 1px 0px 0px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.social {
+  width: 1441px;
+  height: 199px;
+  background-color: #000000;
+  text-align: center;
+}
+.social-content {
+  display: flex;
+  height: 199px;
+  margin: 65px 135.8px -51px;
+  text-align: center;
+}
+.social-left {
+  width: 570px;
+  height: 196px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social-heading_left {
+  width: 540px;
+  height: 46px;
+  font-size: 33px;
+  font-weight: 900;
+  letter-spacing: 1.32px;
+  margin: 50px 0px 0px;
+  text-align: center;
+}
+.social-icons {
+  width: 540px;
+  height: 32px;
+  margin: 18px 0px 50px;
+  padding: 0px 173px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-right {
+  width: 380px;
+  height: 199px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-heading_right {
+  width: 350px;
+  height: 46px;
+  font-size: 33px;
+  font-weight: 900;
+  letter-spacing: 1.32px;
+  margin: 50px 0px 0px;
+}
+.social-infor {
+  width: 325px;
+  height: 35px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4.986px;
+  line-height: 34.902px;
+  margin: 0px 0px 0px -30px;
+  text-align: center;
+  margin-top: 15px;
+  padding-left: 42px;
+  transition: color 0.2s linear;
+}
+
+.contact {
+  width: 1441.6px;
+  height: 857px;
+}
+.contact-map {
+  width: 1441px;
+  height: 455px;
+}
+.contact-text {
+  height: 403px;
+}
+.contact-wrapper {
+  width: 1170px;
+  height: 403px;
+  padding: 50px 0px;
+  margin: 0px 136px;
+}
+.contact-forms {
+  width: 1140px;
+  height: 302px;
+  padding: 25px 25px 0px;
+}
+.contact-form {
+  width: 1090px;
+  height: 277px;
+}
+.contact-left {
+  width: 545px;
+  height: 229px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contact-list {
+  width: 1140px;
+  height: 302px;
+  display: flex;
+  position: relative;
+}
+.contact-right {
+  width: 545px;
+  height: 229px;
+  padding: 0px 15px;
+}
+.contact-bt_title {
+  position: relative;
+  left: 0;
+  top: -75px;
+  left: 15px;
+  z-index: 3;
+}
+
+.footer {
+  width: 1441px;
+  height: 58px;
+  padding: 20px;
+}
+.footer-wrapper {
+  width: 1170px;
+  height: 18px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+.footer-left, .footer-middle, .footer-right {
+  width: 380px;
+  height: 18px;
+  padding: 0 15px;
+}
+.footer-left a, .footer-middle a, .footer-right a {
+  color: white;
+}
+
+/* ============= */
+/* butcher */
+.about-butcher {
+  width: 1441px;
+  height: 430px;
+  display: flex;
+  justify-content: space-around;
+}
+.about-butcher-list {
+  display: flex;
+  justify-content: space-around;
+  width: 1170px;
+  height: 400px;
+  text-align: center;
+  background-color: #000000;
+}
+.about-butcher-img {
+  margin-top: 50px;
+  width: 368px;
+  height: 368px;
+  cursor: pointer;
+}
+.about-butcher-wrapper {
+  width: 388px;
+  height: 388px;
+}
+.about-butcher-wrapper:hover {
+  background-color: #000000;
+  opacity: 0.6;
+}
+.about-butcher-text {
+  position: relative;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+
+.feature-butcher-content {
+  width: 1442px;
+  height: 481px;
+}
+.feature-butcher-desc {
+  display: flex;
+}
+.feature-butcher-img {
+  width: 721px;
+  height: 481px;
+}
+.feature-butcher-text {
+  width: 721px;
+  height: 481px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25px;
+}
+.feature-butcher-h2 {
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin: 0 0 0.58824em;
+  line-height: 32.2px;
+  color: #ededed;
+  font-size: 23px;
+  width: 651px;
+  height: 32px;
+  text-align: left;
+}
+.feature-butcher-p {
+  width: 721px;
+  height: 70px;
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d7d7d7;
+  line-height: 1.6;
+  margin: 0 0 20px;
+  border: none;
+  padding: 0px;
+}
+.feature-butcher-a {
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  line-height: 1.6;
+}
+.feature-butcher-btn {
+  display: inline-block;
+  width: 170px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid transparent;
+  background-color: #cfcfcf;
+  color: #000;
+  padding: 10px 30px;
+  border-radius: 2px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  padding-right: 30px;
+  padding-top: 13px;
+  margin-top: 20px;
+}
+
+.wrapper-butcher {
+  height: 100vh;
+  background: url(https://cdn.shopify.com/s/files/1/0273/6858/7335/files/IMG_3555_copia_1728x.jpg?v=1615321827) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-butcher-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-butcher-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-butcher {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-butcher:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-butcher {
+  min-height: 773px;
+  position: relative;
+}
+.header-butcher-container {
+  width: 1441px;
+}
+.header-butcher-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-butcher-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-butcher-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-butcher-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-butcher-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #b3bbce;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.text-butcher {
+  width: 1442px;
+  height: 162px;
+  margin-bottom: 20px;
+}
+.text-butcher-content {
+  width: 770px;
+  height: 162px;
+}
+.text-butcher-desc {
+  width: 483px;
+  height: 142px;
+  margin-left: 479.5px;
+}
+.text-butcher-p {
+  width: 483px;
+  height: 61px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2", serif;
+  font-size: 15px;
+  line-height: 30.4001px;
+  margin: 0px 0px 20px;
+  text-align: center;
+  border: none;
+}
+.text-butcher-em {
+  width: 483px;
+  height: 61px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30.4001px;
+  margin: 0px 0px 20px;
+  text-align: center;
+  font-style: italic;
+  border: none;
+}
+
+/* boneless-meat */
+.about-boneless {
+  width: 1441px;
+  height: 941px;
+  margin: 35px 0px 0px;
+}
+.about-boneless-list {
+  width: 441px;
+  height: 441px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-boneless-list1 {
+  width: 441px;
+  height: 441px;
+  text-align: center;
+  position: relative;
+  left: 19px;
+}
+.about-boneless-img {
+  position: relative;
+  width: 441px;
+  height: 441px;
+  cursor: pointer;
+  z-index: 5;
+}
+.about-boneless-img .about-boneless-title,
+.about-boneless-img .about-boneless-price,
+.about-boneless-img .about-boneless-txt {
+  color: transparent;
+}
+.about-boneless-img::before {
+  content: "";
+  position: absolute;
+  width: 441px;
+  height: 0;
+  z-index: 4;
+  background-color: #000000;
+  opacity: 0.9;
+  transition: height 0.25 linear;
+}
+.about-boneless-img:hover::before {
+  height: 441px;
+}
+.about-boneless-img:hover .about-boneless-title,
+.about-boneless-img:hover .about-boneless-price,
+.about-boneless-img:hover .about-boneless-txt {
+  color: white;
+}
+.about-boneless-wrapper {
+  width: 1442px;
+  height: 474px;
+  display: flex;
+}
+.about-boneless-text {
+  position: relative;
+  z-index: 10;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+.about-boneless-item {
+  position: relative;
+  width: 401px;
+  height: 66px;
+  padding: 0 20px;
+  cursor: pointer;
+  top: -310px;
+  z-index: 5;
+}
+.about-boneless-title {
+  border: none;
+  width: 371px;
+  height: 37px;
+  margin: 0px 15px 2px;
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 23px;
+  line-height: 36.8px;
+  text-align: center;
+}
+.about-boneless-price {
+  border: none;
+  width: 371px;
+  height: 27px;
+  margin: 0 15px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+.about-boneless-txt {
+  font-family: "Baskerville No 2";
+  font-style: italic;
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+
+.boneless-heading {
+  width: 1442px;
+  height: 32px;
+  margin: 60px 0px 0px 0px;
+}
+
+.boneless-h1 {
+  width: 1442px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 23px;
+  line-height: 32.2px;
+  text-align: center;
+}
+
+.wrapper-boneless {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-boneless-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-boneless-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-boneless {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-boneless:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-boneless {
+  min-height: 50px;
+  position: relative;
+}
+.header-boneless-container {
+  width: 1441px;
+}
+.header-boneless-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-boneless-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-boneless-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-boneless-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-boneless-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* price */
+.about-price {
+  width: 1441px;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+.about-price-list {
+  width: 330px;
+  height: 330px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-price-img {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  cursor: pointer;
+  z-index: 5;
+}
+.about-price-img .about-price-title,
+.about-price-img .about-price-price,
+.about-price-img .about-price-txt {
+  color: transparent;
+}
+.about-price-img::before {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 0;
+  z-index: 4;
+  background-color: #000000;
+  opacity: 0.9;
+  transition: height 0.25 linear;
+}
+.about-price-img:hover::before {
+  height: 330px;
+}
+.about-price-img:hover .about-price-title,
+.about-price-img:hover .about-price-price,
+.about-price-img:hover .about-price-txt {
+  color: white;
+}
+.about-price-text {
+  position: relative;
+  z-index: 10;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+.about-price-item {
+  position: relative;
+  width: 330px;
+  height: 33px;
+  padding: 0 20px;
+  cursor: pointer;
+  top: -270px;
+  z-index: 5;
+}
+.about-price-title {
+  border: none;
+  width: 300px;
+  height: 37px;
+  margin: 0px 15px 2px;
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 23px;
+  line-height: 36.8px;
+  text-align: center;
+}
+.about-price-price {
+  border: none;
+  width: 371px;
+  height: 27px;
+  margin: 0 15px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+.about-price-txt {
+  font-family: "Baskerville No 2";
+  font-style: italic;
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+
+.heading {
+  width: 1442;
+  height: 40px;
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+.heading-h2 {
+  width: 1442px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin: 0 0 0.58824em;
+  line-height: 1.4;
+  color: #ededed;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.body {
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-price-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-price-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-price:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-price {
+  min-height: 60px;
+  position: relative;
+}
+.header-price-container {
+  width: 1441px;
+}
+.header-price-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-price-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-price-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-price-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-price-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #b3bbce;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.table-price {
+  width: 1442px;
+  height: 721px;
+  margin-top: 20px;
+}
+.table-price-wrapper {
+  display: flex;
+  align-items: center;
+  width: 1442px;
+  height: 721px;
+}
+.table-price-right {
+  width: 721px;
+  height: 600px;
+  margin-bottom: 40px;
+}
+.table-price-content {
+  width: 721px;
+  height: 452px;
+}
+.table-price-product {
+  width: 360px;
+  height: 452px;
+  margin-left: 150px;
+  margin-top: 70px;
+}
+.table-price-h1 {
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 34px;
+  line-height: 47.6px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 400;
+}
+.table-price-desc {
+  width: 360px;
+  height: 54px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+.table-price-desc p {
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  border: none;
+}
+.table-price-form {
+  height: 280px;
+  margin-bottom: 30px;
+}
+.table-price-wrappers {
+  display: flex;
+  width: 300px;
+  height: 55px;
+  margin-bottom: 10px;
+}
+.table-price-form-wrapper {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 55px;
+  padding: 6px 3px 6px 12px;
+  border: 1px solid #242424;
+  border-radius: 5px;
+}
+.table-price-label {
+  padding: 6px 0px 9px 0px;
+  color: #ededed;
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+.table-price-label::after {
+  content: ":";
+  padding-left: 2px;
+}
+.table-price-option {
+  color: #ededed;
+  background-color: transparent;
+  border-radius: 0;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-top: 2px;
+  flex-grow: 1;
+  margin-left: 5px;
+  border: 0 none;
+}
+.table-price-pr {
+  position: relative;
+  left: 70px;
+  line-height: 1.6;
+  border: none;
+}
+.table-price-pr span {
+  color: #d7d7d7;
+  font-size: 24px;
+  line-height: 38.4px;
+  text-align: right;
+  font-family: "Baskerville No 2", serif;
+}
+.table-price-pr sub {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 23px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+}
+.table-price-quantity-wr {
+  width: 320px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #242424;
+  border-radius: 2px;
+  padding: 6px 3px 6px 12px;
+}
+.table-price-quantity {
+  color: #ededed;
+  padding: 2px 0;
+}
+.table-price-quantity::after {
+  content: "-";
+  padding-left: 6px;
+}
+.table-price-input {
+  color: #ededed;
+  background-color: transparent;
+  border-radius: 0;
+  flex-grow: 1;
+  border: 0 none;
+  max-width: 100%;
+  font-size: 20px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  width: 200px;
+  height: 27px;
+  padding-top: 10px;
+}
+.table-price-btn {
+  width: 320px;
+  padding: 18px 30px;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.table-price-btn:hover {
+  color: #000000;
+  opacity: 0.8;
+}
+.table-price-text {
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  color: #cfcfcf;
+}
+.table-price-btnpay {
+  margin-top: 10px;
+  width: 320px;
+  padding: 18px 30px;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  transition: all 0.2s linear;
+  background-color: #cfcfcf;
+  cursor: pointer;
+}
+.table-price-btnpay:hover {
+  color: #000000;
+  opacity: 0.8;
+}
+.table-price-textpay {
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+.cart {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 1442px;
+  overflow: auto;
+  z-index: 110;
+  background-color: rgba(51, 51, 51, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.cart-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 350px;
+  right: -1090px;
+  top: 0;
+  background-color: #000000;
+  padding: 12px 0px;
+  z-index: 111;
+}
+.cart table {
+  width: 350px;
+}
+.cart-header button i {
+  position: relative;
+  color: #d6d6d6;
+  display: inline-block;
+  font-size: 17.9999px;
+  line-height: 28.7999px;
+  text-align: center;
+  left: 300px;
+}
+.cart-name {
+  position: relative;
+  bottom: 20px;
+}
+.cart-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 162px;
+}
+.cart-name {
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d7d7d7;
+  line-height: 1.6;
+  right: 5px;
+}
+.cart-price {
+  position: relative;
+  top: -28px;
+  left: -40px;
+}
+.cart-price p {
+  border: none;
+  width: 0;
+  height: 0;
+  padding: 0px;
+  text-align: center;
+  border-bottom: none;
+  font-size: 14px;
+}
+.cart-price p span {
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+.cart-price p sub {
+  font-size: 17px;
+}
+.cart-input input {
+  color: #ededed;
+  background-color: transparent;
+  border-radius: 5px;
+  flex-grow: 1;
+  border: 1px solid #d7d7d7;
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  width: 200px;
+  padding-left: 10px;
+  position: relative;
+  right: 130px;
+  bottom: 15px;
+}
+.cart-del {
+  position: relative;
+  left: -13px;
+  bottom: 28px;
+}
+.cart-pr-total {
+  margin-left: 70px;
+}
+.cart-pr-total p {
+  border: none;
+  width: 0;
+  height: 0;
+  padding: 0px;
+  text-align: center;
+  border-bottom: none;
+  font-size: 25px;
+  color: #d7d7d7;
+}
+.cart-pr-total span {
+  font-size: 25px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+.cart-pr-total sub {
+  font-size: 25px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+.cart-finish-ord {
+  position: relative;
+  padding: 10px 30px;
+  border-radius: 2px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #cfcfcf;
+  color: #000;
+  top: 70px;
+  left: 90px;
+}
+
+.cart table tr td {
+  margin-bottom: 20px;
+  padding: 12px 0;
+}
+
+td {
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+
+/* wine_cellars */
+.about-wine {
+  width: 1441px;
+  height: 430px;
+}
+.about-wine-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1441px;
+  height: 338px;
+  text-align: center;
+  background-color: #000000;
+}
+.about-wine-img {
+  margin-top: 50px;
+  cursor: pointer;
+  width: 338px;
+  height: 338px;
+}
+.about-wine-wrapper {
+  width: 338px;
+  height: 338px;
+}
+.about-wine-wrapper:hover {
+  background-color: #000000;
+  opacity: 0.6;
+}
+.about-wine-text {
+  position: relative;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  bottom: 300px;
+  left: 30px;
+}
+
+.feature-wine-content {
+  width: 1442px;
+  height: 1082px;
+}
+.feature-wine-desc {
+  display: flex;
+}
+.feature-wine-text {
+  width: 721px;
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25px;
+  margin-top: 450px;
+}
+.feature-wine-h2 {
+  font-family: "Baskerville No 2", serif;
+  margin: 0 0 20px;
+  line-height: 47.6px;
+  color: #ededed;
+  font-size: 34px;
+  width: 651px;
+  height: 48px;
+  text-align: left;
+  font-weight: 400;
+}
+.feature-wine-p {
+  width: 651px;
+  height: 27px;
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  color: #d7d7d7;
+  line-height: 27.2px;
+  margin: 0 0 20px;
+  border: none;
+  padding: 0px;
+}
+.feature-wine-btn {
+  display: inline-block;
+  width: 124px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid transparent;
+  background-color: #cfcfcf;
+  color: #000;
+  padding: 10px 30px;
+  border-radius: 2px;
+  font-family: "Baskerville No 2", serif;
+  line-height: 25.6px;
+  font-size: 17px;
+  padding-right: 30px;
+  padding-top: 13px;
+  margin-top: 20px;
+}
+
+.wrapper-wine {
+  height: 100vh;
+  background: url(https://cdn.shopify.com/s/files/1/0280/1683/6706/files/IMG_8210B_1728x.jpg?v=1614331347) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-wine-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-wine-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-wine {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-wine:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-wine {
+  min-height: 773px;
+  position: relative;
+}
+.header-wine-container {
+  width: 1441px;
+}
+.header-wine-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-wine-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-wine-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-wine-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-wine-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #b3bbce;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.text-wine {
+  width: 1442px;
+  height: 208px;
+  margin-top: 30px;
+}
+.text-wine-content {
+  width: 740px;
+  height: 208px;
+}
+.text-wine-title {
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32.2px;
+  margin: 0px 0px 20px 0;
+  margin-left: 532px;
+}
+.text-wine-desc {
+  width: 740px;
+  height: 208px;
+  margin-left: 360px;
+}
+.text-wine-p {
+  width: 740px;
+  height: 208px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0px 0px 20px;
+  text-align: center;
+  border: none;
+}
+
+.content-wine {
+  margin-top: 40px;
+}
+.content-wine-content {
+  width: 1442px;
+  height: 1082px;
+}
+.content-wine-desc {
+  display: flex;
+}
+.content-wine-text {
+  width: 721px;
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25px;
+  margin-top: 366px;
+}
+.content-wine-h2 {
+  font-family: "Baskerville No 2", serif;
+  margin: 0 0 50px 0;
+  line-height: 39.2px;
+  color: #ededed;
+  font-size: 28px;
+  width: 651px;
+  height: 48px;
+  text-align: left;
+  font-weight: 400;
+  position: relative;
+  left: 400px;
+  text-align: center;
+}
+.content-wine-p {
+  width: 651px;
+  height: 27px;
+  font-size: 17px;
+  font-family: "Baskerville No 2", serif;
+  color: #d7d7d7;
+  line-height: 27.2px;
+  margin: 0 0 20px;
+  border: none;
+  padding: 25px 20px;
+}
+.content-wine-a {
+  color: #ffffff;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-size: 25.5px;
+  line-height: 40.8px;
+  text-align: center;
+  text-decoration: underline;
+  text-align: center;
+}
+.content-wine-italic {
+  color: #ffffff;
+  font-family: "Baskerville No 2", serif;
+  font-weight: 400;
+  font-size: 25.5px;
+  line-height: 40.8px;
+  text-align: center;
+  text-decoration: underline;
+  text-align: center;
+  font-style: italic;
+}
+
+.human-wine {
+  width: 1441px;
+  height: 430px;
+}
+.human-wine-h2 {
+  font-family: "Baskerville No 2", serif;
+  line-height: 39.2px;
+  color: #ededed;
+  font-size: 28px;
+  width: 651px;
+  height: 48px;
+  text-align: left;
+  font-weight: 400;
+  position: relative;
+  left: 400px;
+  text-align: center;
+  margin-top: 70px;
+}
+.human-wine-list {
+  display: flex;
+  justify-content: center;
+  width: 1441px;
+  height: 338px;
+  text-align: center;
+  background-color: #000000;
+}
+.human-wine-img {
+  margin-top: 50px;
+  cursor: pointer;
+  width: 338px;
+  height: 338px;
+}
+.human-wine-wrapper {
+  width: 338px;
+  height: 338px;
+}
+.human-wine-wrapper:hover {
+  background-color: #000000;
+  opacity: 0.6;
+}
+.human-wine-text {
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 30px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  left: 30px;
+}
+.human-wine-img1 {
+  margin-right: 30px;
+  width: 338px;
+  height: 338px;
+  background: url(https://cdn.shopify.com/s/files/1/0280/1683/6706/collections/Hans_Vinding-Diers_720x.jpg?v=1591225684) no-repeat center center/cover;
+}
+.human-wine-img2 {
+  margin-left: 30px;
+  width: 338px;
+  height: 338px;
+  background: url(https://cdn.shopify.com/s/files/1/0280/1683/6706/collections/Matias_Michelini_540x.jpg?v=1592583920) no-repeat center center/cover;
+}
+
+/* Menu_Hans_wine */
+.about-menu_Hans {
+  width: 1441px;
+  height: 941px;
+  margin: 35px 0px 0px;
+}
+.about-menu_Hans-list {
+  width: 441px;
+  height: 441px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-menu_Hans-img {
+  position: relative;
+  width: 441px;
+  height: 441px;
+  cursor: pointer;
+  z-index: 5;
+}
+.about-menu_Hans-img .about-menu_Hans-title,
+.about-menu_Hans-img .about-menu_Hans-price,
+.about-menu_Hans-img .about-menu_Hans-txt {
+  color: transparent;
+}
+.about-menu_Hans-img::before {
+  content: "";
+  position: absolute;
+  width: 441px;
+  height: 0;
+  z-index: 4;
+  background-color: #000000;
+  opacity: 0.9;
+  transition: height 0.25 linear;
+}
+.about-menu_Hans-img:hover::before {
+  height: 441px;
+}
+.about-menu_Hans-img:hover .about-menu_Hans-title,
+.about-menu_Hans-img:hover .about-menu_Hans-price,
+.about-menu_Hans-img:hover .about-menu_Hans-txt {
+  color: white;
+}
+.about-menu_Hans-wrapper {
+  width: 1442px;
+  height: 474px;
+  display: flex;
+}
+.about-menu_Hans-text {
+  position: relative;
+  z-index: 10;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+.about-menu_Hans-item {
+  position: relative;
+  width: 401px;
+  height: 66px;
+  padding: 0 20px;
+  cursor: pointer;
+  top: -310px;
+  z-index: 5;
+}
+.about-menu_Hans-title {
+  border: none;
+  width: 371px;
+  height: 37px;
+  margin: 0px 15px 2px;
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 23px;
+  line-height: 36.8px;
+  text-align: center;
+}
+.about-menu_Hans-price {
+  border: none;
+  width: 371px;
+  height: 27px;
+  margin: 0 15px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+.about-menu_Hans-txt {
+  font-family: "Baskerville No 2";
+  font-style: italic;
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+
+.menu_Hans-heading {
+  width: 1442px;
+  height: 32px;
+  margin: 60px 0px 150px 0px;
+}
+
+.menu_Hans-h1 {
+  width: 1442px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 23px;
+  line-height: 32.2px;
+  text-align: center;
+}
+
+.menu_Hans-p {
+  width: 1300px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+  border: none;
+  margin-left: 50px;
+}
+
+.wrapper-menu_Hans {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-menu_Hans-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-menu_Hans-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-menu_Hans {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-menu_Hans:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-menu_Hans {
+  min-height: 50px;
+  position: relative;
+}
+.header-menu_Hans-container {
+  width: 1441px;
+}
+.header-menu_Hans-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-menu_Hans-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-menu_Hans-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-menu_Hans-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-menu_Hans-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu_Hans_wine */
+.about-menu_Matias {
+  width: 1441px;
+  height: 941px;
+  margin: 35px 0px 0px;
+}
+.about-menu_Matias-list {
+  width: 441px;
+  height: 441px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-menu_Matias-img {
+  position: relative;
+  width: 441px;
+  height: 441px;
+  cursor: pointer;
+  z-index: 5;
+}
+.about-menu_Matias-img .about-menu_Matias-title,
+.about-menu_Matias-img .about-menu_Matias-price,
+.about-menu_Matias-img .about-menu_Matias-txt {
+  color: transparent;
+}
+.about-menu_Matias-img::before {
+  content: "";
+  position: absolute;
+  width: 441px;
+  height: 0;
+  z-index: 4;
+  background-color: #000000;
+  opacity: 0.9;
+  transition: height 0.25 linear;
+}
+.about-menu_Matias-img:hover::before {
+  height: 441px;
+}
+.about-menu_Matias-img:hover .about-menu_Matias-title,
+.about-menu_Matias-img:hover .about-menu_Matias-price,
+.about-menu_Matias-img:hover .about-menu_Matias-txt {
+  color: white;
+}
+.about-menu_Matias-wrapper {
+  width: 1442px;
+  height: 474px;
+  display: flex;
+}
+.about-menu_Matias-text {
+  position: relative;
+  z-index: 10;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+.about-menu_Matias-item {
+  position: relative;
+  width: 401px;
+  height: 66px;
+  padding: 0 20px;
+  cursor: pointer;
+  top: -310px;
+  z-index: 5;
+}
+.about-menu_Matias-title {
+  border: none;
+  width: 371px;
+  height: 37px;
+  margin: 0px 15px 2px;
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 23px;
+  line-height: 36.8px;
+  text-align: center;
+}
+.about-menu_Matias-price {
+  border: none;
+  width: 371px;
+  height: 27px;
+  margin: 0 15px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+.about-menu_Matias-txt {
+  font-family: "Baskerville No 2";
+  font-style: italic;
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+
+.menu_Matias-heading {
+  width: 1442px;
+  height: 32px;
+  margin: 60px 0px 150px 0px;
+}
+
+.menu_Matias-h1 {
+  width: 1442px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 23px;
+  line-height: 32.2px;
+  text-align: center;
+}
+
+.menu_Matias-p {
+  width: 1300px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+  border: none;
+  margin-left: 50px;
+}
+
+.wrapper-menu_Matias {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-menu_Matias-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-menu_Matias-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-menu_Matias {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-menu_Matias:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-menu_Matias {
+  min-height: 50px;
+  position: relative;
+}
+.header-menu_Matias-container {
+  width: 1441px;
+}
+.header-menu_Matias-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-menu_Matias-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-menu_Matias-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-menu_Matias-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-menu_Matias-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu I */
+.about-menu_I {
+  width: 1441px;
+  height: 941px;
+  margin: 35px 0px 0px;
+}
+.about-menu_I-list {
+  display: block;
+  width: 441px;
+  height: 441px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-menu_I-img {
+  position: relative;
+  width: 441px;
+  height: 441px;
+  cursor: pointer;
+  z-index: 5;
+}
+.about-menu_I-img .about-menu_I-title,
+.about-menu_I-img .about-menu_I-price,
+.about-menu_I-img .about-menu_I-txt {
+  color: transparent;
+}
+.about-menu_I-img::before {
+  content: "";
+  position: absolute;
+  width: 441px;
+  height: 0;
+  z-index: 4;
+  background-color: #000000;
+  opacity: 0.9;
+  transition: height 0.25 linear;
+}
+.about-menu_I-img:hover::before {
+  height: 441px;
+}
+.about-menu_I-img:hover .about-menu_I-title,
+.about-menu_I-img:hover .about-menu_I-price,
+.about-menu_I-img:hover .about-menu_I-txt {
+  color: white;
+}
+.about-menu_I-wrapper {
+  width: 1442px;
+  height: 474px;
+  display: flex;
+}
+.about-menu_I-text {
+  position: relative;
+  z-index: 10;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+.about-menu_I-item {
+  position: relative;
+  width: 401px;
+  height: 66px;
+  padding: 0 20px;
+  cursor: pointer;
+  top: -310px;
+  z-index: 5;
+}
+.about-menu_I-title {
+  border: none;
+  width: 371px;
+  height: 37px;
+  margin: 0px 15px 2px;
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 23px;
+  line-height: 36.8px;
+  text-align: center;
+}
+.about-menu_I-price {
+  border: none;
+  width: 371px;
+  height: 27px;
+  margin: 0 15px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+.about-menu_I-txt {
+  font-family: "Baskerville No 2";
+  font-style: italic;
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+
+.menu_I-heading {
+  width: 1442px;
+  height: 32px;
+  margin: 60px 0px 0px 0px;
+}
+
+.menu_I-h1 {
+  width: 1442px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 23px;
+  line-height: 32.2px;
+  text-align: center;
+}
+
+.menu_I-p {
+  width: 1300px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+  border: none;
+  margin-left: 50px;
+}
+
+.wrapper-menu_I {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-menu_I-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-menu_I-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-menu_I {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-menu_I:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-menu_I {
+  min-height: 50px;
+  position: relative;
+}
+.header-menu_I-container {
+  width: 1441px;
+}
+.header-menu_I-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-menu_I-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-menu_I-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-menu_I-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-menu_I-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu II */
+.about-menu_II {
+  width: 1441px;
+  height: 941px;
+  margin: 35px 0px 0px;
+}
+.about-menu_II-list {
+  width: 441px;
+  height: 441px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-menu_II-img {
+  position: relative;
+  width: 441px;
+  height: 441px;
+  cursor: pointer;
+  z-index: 5;
+}
+.about-menu_II-img .about-menu_II-title,
+.about-menu_II-img .about-menu_II-price,
+.about-menu_II-img .about-menu_II-txt {
+  color: transparent;
+}
+.about-menu_II-img::before {
+  content: "";
+  position: absolute;
+  width: 441px;
+  height: 0;
+  z-index: 4;
+  background-color: #000000;
+  opacity: 0.9;
+  transition: height 0.25 linear;
+}
+.about-menu_II-img:hover::before {
+  height: 441px;
+}
+.about-menu_II-img:hover .about-menu_II-title,
+.about-menu_II-img:hover .about-menu_II-price,
+.about-menu_II-img:hover .about-menu_II-txt {
+  color: white;
+}
+.about-menu_II-wrapper {
+  width: 1442px;
+  height: 474px;
+  display: flex;
+}
+.about-menu_II-text {
+  position: relative;
+  z-index: 10;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+.about-menu_II-item {
+  position: relative;
+  width: 401px;
+  height: 66px;
+  padding: 0 20px;
+  cursor: pointer;
+  top: -310px;
+  z-index: 5;
+}
+.about-menu_II-title {
+  border: none;
+  width: 371px;
+  height: 37px;
+  margin: 0px 15px 2px;
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 23px;
+  line-height: 36.8px;
+  text-align: center;
+}
+.about-menu_II-price {
+  border: none;
+  width: 371px;
+  height: 27px;
+  margin: 0 15px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+.about-menu_II-txt {
+  font-family: "Baskerville No 2";
+  font-style: italic;
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+
+.menu_II-heading {
+  width: 1442px;
+  height: 32px;
+  margin: 60px 0px 0px 0px;
+}
+
+.menu_II-h1 {
+  width: 1442px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 23px;
+  line-height: 32.2px;
+  text-align: center;
+}
+
+.menu_II-p {
+  width: 1300px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+  border: none;
+  margin-left: 50px;
+}
+
+.wrapper-menu_II {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-menu_II-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-menu_II-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-menu_II {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-menu_II:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-menu_II {
+  min-height: 50px;
+  position: relative;
+}
+.header-menu_II-container {
+  width: 1441px;
+}
+.header-menu_II-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-menu_II-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-menu_II-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-menu_II-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-menu_II-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu III */
+.about-menu_III {
+  width: 1441px;
+  height: 941px;
+  margin: 35px 0px 0px;
+}
+.about-menu_III-list {
+  width: 441px;
+  height: 441px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-menu_III-img {
+  position: relative;
+  width: 441px;
+  height: 441px;
+  cursor: pointer;
+  z-index: 5;
+}
+.about-menu_III-img .about-menu_III-title,
+.about-menu_III-img .about-menu_III-price,
+.about-menu_III-img .about-menu_III-txt {
+  color: transparent;
+}
+.about-menu_III-img::before {
+  content: "";
+  position: absolute;
+  width: 441px;
+  height: 0;
+  z-index: 4;
+  background-color: #000000;
+  opacity: 0.9;
+  transition: height 0.25 linear;
+}
+.about-menu_III-img:hover::before {
+  height: 441px;
+}
+.about-menu_III-img:hover .about-menu_III-title,
+.about-menu_III-img:hover .about-menu_III-price,
+.about-menu_III-img:hover .about-menu_III-txt {
+  color: white;
+}
+.about-menu_III-wrapper {
+  width: 1442px;
+  height: 474px;
+  display: flex;
+}
+.about-menu_III-text {
+  position: relative;
+  z-index: 10;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+.about-menu_III-item {
+  position: relative;
+  width: 401px;
+  height: 66px;
+  padding: 0 20px;
+  cursor: pointer;
+  top: -310px;
+  z-index: 5;
+}
+.about-menu_III-title {
+  border: none;
+  width: 371px;
+  height: 37px;
+  margin: 0px 15px 2px;
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 23px;
+  line-height: 36.8px;
+  text-align: center;
+}
+.about-menu_III-price {
+  border: none;
+  width: 371px;
+  height: 27px;
+  margin: 0 15px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+.about-menu_III-txt {
+  font-family: "Baskerville No 2";
+  font-style: italic;
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+
+.menu_III-heading {
+  width: 1442px;
+  height: 32px;
+  margin: 60px 0px 0px 0px;
+}
+
+.menu_III-h1 {
+  width: 1442px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 23px;
+  line-height: 32.2px;
+  text-align: center;
+}
+
+.menu_III-p {
+  width: 1300px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+  border: none;
+  margin-left: 50px;
+}
+
+.wrapper-menu_III {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-menu_III-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-menu_III-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-menu_III {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-menu_III:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-menu_III {
+  min-height: 50px;
+  position: relative;
+}
+.header-menu_III-container {
+  width: 1441px;
+}
+.header-menu_III-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-menu_III-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-menu_III-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-menu_III-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-menu_III-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu IV */
+.about-menu_IV {
+  width: 1441px;
+  height: 941px;
+  margin: 35px 0px 0px;
+}
+.about-menu_IV-list {
+  width: 441px;
+  height: 441px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-menu_IV-img {
+  position: relative;
+  width: 441px;
+  height: 441px;
+  cursor: pointer;
+  z-index: 5;
+}
+.about-menu_IV-img .about-menu_IV-title,
+.about-menu_IV-img .about-menu_IV-price,
+.about-menu_IV-img .about-menu_IV-txt {
+  color: transparent;
+}
+.about-menu_IV-img::before {
+  content: "";
+  position: absolute;
+  width: 441px;
+  height: 0;
+  z-index: 4;
+  background-color: #000000;
+  opacity: 0.9;
+  transition: height 0.25 linear;
+}
+.about-menu_IV-img:hover::before {
+  height: 441px;
+}
+.about-menu_IV-img:hover .about-menu_IV-title,
+.about-menu_IV-img:hover .about-menu_IV-price,
+.about-menu_IV-img:hover .about-menu_IV-txt {
+  color: white;
+}
+.about-menu_IV-wrapper {
+  width: 1442px;
+  height: 474px;
+  display: flex;
+}
+.about-menu_IV-text {
+  position: relative;
+  z-index: 10;
+  width: 267px;
+  height: 106px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 42px;
+  line-height: 52.8px;
+  margin: 0px 0px 8px;
+  text-shadow: #000000 2px 2px 10px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  bottom: 300px;
+  left: 30px;
+}
+.about-menu_IV-item {
+  position: relative;
+  width: 401px;
+  height: 66px;
+  padding: 0 20px;
+  cursor: pointer;
+  top: -310px;
+  z-index: 5;
+}
+.about-menu_IV-title {
+  border: none;
+  width: 371px;
+  height: 37px;
+  margin: 0px 15px 2px;
+  color: #ededed;
+  font-family: "Baskerville No 2";
+  font-size: 23px;
+  line-height: 36.8px;
+  text-align: center;
+}
+.about-menu_IV-price {
+  border: none;
+  width: 371px;
+  height: 27px;
+  margin: 0 15px;
+  color: #d7d7d7;
+  font-family: "Baskerville No 2";
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+.about-menu_IV-txt {
+  font-family: "Baskerville No 2";
+  font-style: italic;
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+}
+
+.menu_IV-heading {
+  width: 1442px;
+  height: 32px;
+  margin: 60px 0px 0px 0px;
+}
+
+.menu_IV-h1 {
+  width: 1442px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 23px;
+  line-height: 32.2px;
+  text-align: center;
+}
+
+.menu_IV-p {
+  width: 1300px;
+  height: 32px;
+  color: #ededed;
+  font-family: "Baskerville No 2", serif;
+  font-size: 17px;
+  line-height: 27.2px;
+  text-align: center;
+  border: none;
+  margin-left: 50px;
+}
+
+.wrapper-menu_IV {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  font-size: 20px;
+  color: #2f2e2f;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "museo-sans", helvetica, sans-serif;
+  background-color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+/* ============= */
+/* Header  */
+.header-menu_IV-container {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.header-menu_IV-title {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.menu-link,
+.dropdown-link {
+  color: #ffffff;
+  transition: color 0.2s linear;
+}
+.menu-link:hover,
+.dropdown-link:hover {
+  color: #96e16b;
+}
+
+.btn-menu_IV {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px;
+  transition: color 0.2s linear;
+}
+.btn-menu_IV:hover {
+  color: #96e16b;
+}
+
+.navactive {
+  border-bottom: 1px solid #96e16b;
+}
+
+/* ============ End header ================ */
+/* about */
+/* global */
+h1,
+h2 p,
+a,
+span {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #2f2e2f;
+}
+
+.global-heading {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  border: 1px solid #2f2e2f;
+  text-transform: capitalize;
+  padding: 10px 16px 5px 16px;
+  width: 280px;
+  height: 61px;
+}
+.global-text {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  width: 540px;
+  height: 210px;
+  border: none;
+}
+.global-h1 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "museo-sans", helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 2.88px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 234px;
+  margin-bottom: 235px;
+  z-index: 2;
+}
+.global-color_animation {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0px -30px;
+  text-align: center;
+  transition: color 0.2s linear;
+}
+.global-color_animation:hover {
+  color: #9be86f;
+}
+
+/* Reservation */
+.reservation-bt {
+  background-color: #50a06c;
+}
+
+.reservation-bt_title {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reservation-name_borders {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+h2 {
+  width: 360px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reservation-background_content::after {
+  content: "";
+  background-color: #2f2e2f;
+}
+
+.reservation-bt {
+  box-shadow: #000000 0px 1px 4px 0px;
+  font-family: sans-serif;
+}
+
+.reservation-hr {
+  border-color: #eeeeee;
+}
+
+/* Social Section */
+.social {
+  background-color: #000000;
+}
+
+.social-infor {
+  font-family: "museo-sans", helvetica, sans-serif;
+  color: #ffffff;
+}
+.social-infor:hover {
+  color: #9be86f;
+}
+
+.social-heading_left,
+.social-heading_right {
+  color: #63c85d;
+}
+
+.contact-left_ip {
+  width: 100%;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-right_ms {
+  width: 100%;
+  height: 200px;
+  padding: 16.94px;
+  border: 1px solid #0d0c0c;
+  margin-bottom: 25px;
+  color: #727272;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.contact-bt_title {
+  width: 180px;
+  float: left;
+  height: auto;
+  padding: 15px;
+  color: #ffffff;
+  background: #50a06c;
+  border: none;
+  border-radius: 3px;
+}
+
+/* footer */
+.footer {
+  background-color: #1c1c1c;
+  font-family: sans-serif;
+}
+
+.footer-p {
+  color: #6b6b6b;
+  font-family: "museo-sans", helvetica, sans-serif;
+  text-align: center;
+  width: 350px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-menu_IV {
+  min-height: 50px;
+  position: relative;
+}
+.header-menu_IV-container {
+  width: 1441px;
+}
+.header-menu_IV-top {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  margin-left: 136px;
+}
+.header-menu_IV-buttons {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-menu_IV-title {
+  font-size: 34px;
+  line-height: 1.7;
+  padding: 5px;
+  text-align: center;
+}
+.header-menu_IV-main {
+  margin: 0 360px;
+  position: relative;
+}
+.header-menu_IV-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 299px 0 345px 0;
+  width: 721px;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.menu {
+  margin-left: 288px;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-caret {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  right: 10px;
+}
+.dropdown-item {
+  padding: 15px;
+  font-size: 13.5px;
+  line-height: 1.4814814815;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #b3bbce;
+  transition: all 0.2s linear;
+  border-left: 3px solid transparent;
+}
+.dropdown-item:hover {
+  border-left-color: #b3bbce;
+}
+.dropdown-text {
+  color: #b3bbce;
+  transition: all 0.2s linear;
+}
+.dropdown-text:hover {
+  color: #74809d;
+}
+.dropdown-img {
+  width: 20px;
+  margin-left: 5px;
+}
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 168px;
+  border-radius: 4px;
+  background-color: #2f2e2f;
+  box-shadow: 0 0 10px 0 rgba(189, 189, 189, 0.1);
+  margin-top: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  background-color: #2f2e2f;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 59px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -2;
+}
+.dropdown-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=app.css.map */

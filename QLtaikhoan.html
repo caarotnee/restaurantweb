@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/QLtaikhoan.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <a class="admin" href="#">Hi Admin</a>         
+            <div class="nav-header ">
+                <a href="./QLtaikhoan.html">Quản lí tài khoản </a>
+                <a href="./QLhanghoa.html">Quản lí hàng hóa </a>
+                <a href="./QLdonhang.html">Quản lí đơn hàng </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="content">
+
+        <div class="content-title">
+            <p>Quản Lí Tài Khoản</p>
+        </div>
+
+        <div class="container-input">
+
+            <div class="input__info">              
+                <label for="" class="block">ID*</label>
+                <input type="number" placeholder="Id" required id="Id" class="info inId">
+                <div class="error"></div>
+            </div>
+
+            <div class="input__info">              
+                <label for="" class="block">Name*</label>
+                <input type="text" placeholder="Name" required id="Name" class="info inName">
+                <div class="error"></div>
+            </div>
+            <div class="input__info">              
+                <label for="" class="block">UserName*</label>
+                <input type="text" placeholder="Name" required id="Name" class="info inName">
+                <div class="error"></div>
+            </div>
+            <div class="input__info">              
+                <label for="" class="block">PassWord*</label>
+                <input type="text" placeholder="Name" required id="Name" class="info inName">
+                <div class="error"></div>
+            </div>
+
+            <div class="input__info">
+                <label for="" class="block">Email*</label>
+                <input type="email" placeholder="Enter email" required id="Email" class="info inEmail">       
+                <div class="error"></div>
+            </div>      
+            
+            <div class="input__info">          
+                <label for="" class="block">Phone Number*</label>
+                <input type="number" placeholder="Enter phone number" required id="PhoneNumber" class="info inPhoneNumber">   
+                <div class="error"></div>                            
+            </div> 
+
+            <div class="input__info">           
+                <label for="" class="block">BirthDay*</label>
+                <input type="datetime" placeholder="Enter BirthDay" required id="BirthDay" class="info inBirthDay">
+                <div class="error"></div>
+            </div> 
+
+            
+
+            <div class="btn-submit">
+                <button onclick="add()">Submit</button>
+            </div>
+        </div>        
+
+        <table  class="table" id="render">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>PHONE NUMBER</th>
+                    <th>BIRTHDAY</th>
+                    <th style="width:150px"> OPTIONS </th>
+                   
+                </tr> 
+            </thead>  
+        </table>  
+    </div>
+</body>
+
+<script>
+    var data=[]
+
+    function add()
+    {
+        var item_id = document.getElementById("Id").value
+        var item_name = document.getElementById("Name").value 
+        var item_email = document.getElementById("Email").value 
+        var item_phoneNumber = document.getElementById("PhoneNumber").value 
+        var item_birthday = document.getElementById("BirthDay").value 
+    
+
+        var item = 
+        {
+            Id : item_id,
+            Name : item_name,
+            Email : item_email,
+            PhoneNumber : item_phoneNumber,
+            Birthday : item_birthday,
+        }
+
+        let index = data.findIndex((c) => c.Id == item.Id)
+        if (index >= 0)
+        {
+            data.splice(index,1,item)
+        }
+        else{
+            data.push(item)
+        } 
+        render()
+        clear()
+    }
+
+    function render()
+    {
+        table = `<tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>BirthDay</th>
+            <th>Options</th>   
+            </tr>`
+            for (let i = 0 ; i < data.length ; i++)
+            {
+                table = table + `<tr>
+                <th>${data[i].Id}</th>
+                <th>${data[i].Name}</th>
+                <th>${data[i].Email}</th>
+                <th>${data[i].PhoneNumber}</th>
+                <th>${data[i].Birthday}</th>
+
+                <th>
+                    <button onclick="deleteItem(${data[i].Id})"> Delete </button> 
+                    <button onclick="editItem(${data[i].Id})"> Edit </button> 
+                </th>
+
+                </tr>`
+                
+            }
+            document.getElementById("render").innerHTML = table
+    }
+
+    function clear ()
+    {
+        var item_id = document.getElementById("Id").value =""
+        var item_name = document.getElementById("Name").value =""
+        var item_email = document.getElementById("Email").value =""
+        var item_phoneNumber = document.getElementById("PhoneNumber").value =""
+        var item_birthday = document.getElementById("BirthDay").value =""
+    }
+
+    function deleteItem(x)
+    {
+        for (let i = 0 ; i <data.length; i++)
+        {
+            if (data[i].Id == x)
+            {
+                data.splice(i,1)
+                render()
+            }
+        }
+    }
+
+    function editItem(x)
+    {
+        for (let i = 0 ; i < data.length; i++)
+        {
+            if (data[i].Id == x)
+            {
+                document.getElementById("Id").value = data[i].Id;
+                document.getElementById("Name").value = data[i].Name;
+                document.getElementById("Email").value = data[i].Email ;
+                document.getElementById("PhoneNumber").value = data[i].PhoneNumber ;
+                document.getElementById("BirthDay").value = data[i].Birthday ;
+            }
+        }
+    }
+
+    
+</script>

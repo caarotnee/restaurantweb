@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/QLdonhang.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+
+    <title>Admin</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <a class="admin" href="#">Hi Admin</a>
+            <div class="nav-header ">
+                <a href="./QLtaikhoan.html">Quản lí tài khoản </a>
+                <a href="./QLhanghoa.html">Quản lí hàng hóa </a>
+                <a href="./QLdonhang.html">Quản lí đơn hàng </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="title-order">
+            <p>Quản Lí Đơn Hàng</p>
+        </div>
+
+        <table class="table-order">
+            <tr>
+                <th>Mã đơn</th>
+                <th>Tên khách hàng</th>
+                <th>Tổng tiền</th>
+                <th>Ngày mua</th>
+                <th>Trạng thái</th>
+                <th style="width: 200px"> Xử lí</th>
+
+            </tr>
+            <tr>
+                <td>011</td>
+                <td>Phương An</td>
+                <td class="name-product" style="display:none;">
+                    SuperUco Gualta
+                </td>
+                <td class="quantity-product" style="display:none;">1</td>
+                <td class="cost-product">$9.500</td>
+                <td>05/12/2022</td>
+                <td>
+                    <span id="chuaxuli">Chưa xử lí</span>
+                    <span id="daxuli" style="display:none">Đã xử lí</span>
+                </td>
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>010</td>
+                <td>Phạm Thị Mỹ Duyên</td>
+                <td class="name-product" style="display:none;">Wide steak</td>
+                <td class="quantity-product" style="display:none;">1</td>
+                <td class="cost-product">$4.500</td>
+                <td>05/12/2022</td>
+                <td>
+                    <span id="chuaxuli">Chưa xử lí</span>
+                    <span id="daxuli" style="display:none">Đã xử lí</span>
+                </td>
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>009</td>
+                <td>Phan Thượng Tuyên</td>
+                <td class="name-product" style="display:none;">Demente</td>
+                <td class="quantity-product" style="display:none;">2</td>
+                <td class="cost-product">$7.000</td>
+                <td>04/12/2022</td>
+                <td>
+                    <span id="chuaxuli">Chưa xử lí</span>
+                    <span id="daxuli" style="display:none">Đã xử lí</span>
+                </td>
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>008</td>
+                <td>Võ Khánh Linh</td>
+                <td class="name-product" style="display:none;">Strip steak</td>
+                <td class="quantity-product" style="display:none;">3</td>
+                <td class="cost-product">$6.750</td>
+                <td>03/12/2022</td>
+                <td>
+                    <span id="chuaxuli">Chưa xử lí</span>
+                    <span id="daxuli" style="display:none">Đã xử lí</span>
+                </td>
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>Uyển Nhi</td>
+                <td class="name-product" style="display:none;">Micheliniwine Bianco</td>
+                <td class="quantity-product" style="display:none;">1</td>
+                <td class="cost-product">$6.000</td>
+                <td>02/12/2022</td>
+                <td>
+                    <span id="chuaxuli">Chưa xử lí</span>
+                    <span id="daxuli" style="display:none">Đã xử lí</span>
+                </td>
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>Nguyễn Lâm Quỳnh Mai</td>
+                <td class="name-product" style="display:none;">Pork steak</td>
+                <td class="quantity-product" style="display:none;">1</td>
+                <td>$8.000</td>
+                <td>02/12/2022</td>
+                <td>
+                    <span id="chuaxuli">Chưa xử lí</span>
+                    <span id="daxuli" style="display:none">Đã xử lí</span>
+                </td>
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>005</td>
+                <td>Trần Nguyên Doan</td>
+                <td class="name-product" style="display:none;">
+                    Costa y
+                </td>
+                <td class="quantity-product" style="display:none;">
+                    1
+                </td>
+                <td>$5.000</td>
+                <td>01/12/2022</td>
+                <td> Đã xử lí </td> 
+
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>004</td>
+                <td>Minh Thư</td>
+                <td class="name-product" style="display:none;">Rib eye</td>
+                <td class="quantity-product" style="display:none;">5</td>
+                <td>$12.700</td>
+                <td>01/12/2022</td>
+                <td> Đã xử lí </td> 
+
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Nguyễn Long Vũ</td>
+                <td class="name-product" style="display:none;">A Lisa</td>
+                <td class="quantity-product" style="display:none;">2</td>
+                <td>$5.600</td>
+                <td>30/11/2022</td>
+
+                <td> Đã xử lí </td> 
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Nhã Hân</td>
+                <td class="name-product" style="display:none;">
+                    Calcáreo Granito de Tupungato</td>
+                <td class="quantity-product" style="display:none;">2</td>
+                <td>$5.600</td>
+                <td>29/11/2022</td>
+                <td> Đã xử lí </td>
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Ngọc Trân</td>
+                <td class="name-product" style="display:none;">Wide steak</td>
+                <td class="quantity-product" style="display:none;">2</td>
+                <td>$9.000</td>
+                <td>29/11/2022</td>
+                <td> Đã xử lí </td>
+                <td>
+                    <button class="button-order js-confirm">xác nhận</button>
+                    <button class="button-order js-delete">xóa </button>
+                    <button class="button-order js-detail">xem chi tiết </button>
+
+                </td>
+            </tr>
+        </table>
+
+        <div class="modal-delete">
+            <div class="modal-delete-inner">
+                <div class="modal-delete-header">
+                    <p>Thông báo</p>
+                    <i class="ti-close js-close"></i>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn có muốn xóa đơn hàng phẩm không?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-delete">Xóa</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal detail -->
+        <div class="modal-detail">
+            <div class="modal-detail-inner">
+                <div class="modal-detail-header">
+                    <p>Chi tiết đơn hàng</p>
+                    <i class="ti-close js-detail-close"></i>
+                </div>
+                <div class="modal-detail-body">
+                    <table class="table-detail" style="width: 80%;
+                    margin: auto;
+                    text-align: center;">
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                        </tr>
+                        <tr class="detail-add">
+
+                        </tr>
+                    </table>
+
+                    <div class="detail-note"> 
+                        <p class="note">Ghi chú:</p>
+                        <p class="content-note"> </p>
+                    </div>
+
+                </div>
+                <div class="modal-detail-footer">
+                    <button class="js-detail-close">Thoát</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- bảng thống kê -->
+        <div class="statictis">
+            <div class="statictis-header">
+                <p>Bảng thống kê</p>
+            </div>
+
+            <table class="table-statictis">
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Mã đơn </th>
+                    <th>Hóa đơn</th>
+                    <th>Tổng thu nhập</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="7">01/12/2022 - 31/12/2022</td>
+                    <td>011</td>
+                    <td>$9.500</td>
+                    <td rowspan="7">$54.450</td>
+                </tr>
+
+                <tr>
+                    <td>010</td>
+                    <td>$4.500</td>
+                </tr>
+
+                <tr>
+                    <td>009</td>
+                    <td>$7.000</td>
+
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td>$6.750</td>
+
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>$6.000</td>
+
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>$8.000</td>
+
+                </tr>
+
+                <tr>
+                    <td>004</td>
+                    <td>$12.700</td>
+
+                </tr>
+
+                <tr>
+                    <td rowspan="3">01/11/2022 - 30/11/2022</td>
+                    <td>003</td>
+                    <td>$9.500</td>
+                    <td rowspan="3">$24.100</td>
+                </tr>
+
+                <tr>
+                    <td>002</td>
+                    <td>$5.600</td>
+
+                </tr>
+
+                <tr>
+                    <td>001</td>
+                    <td>$9.000</td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+    // Xác nhận trạng thái đơn hàng
+    const confirmbtns = document.querySelectorAll('.js-confirm');
+    for (const confirm of confirmbtns) {
+        confirm.addEventListener('click', function (event) {
+            var targer = event.target.parentElement;
+            var btndaxuli = targer.parentElement.querySelector('span#daxuli')
+            var btnchuaxuli = targer.parentElement.querySelector('span#chuaxuli')
+            btndaxuli.style.display = "block";
+            btnchuaxuli.style.display = "none";
+        })
+    }
+
+    //modal delete
+    const deleteBtns = document.querySelectorAll('.js-delete')
+    const modal = document.querySelector('.modal-delete')
+    const modalClose = document.querySelector('.js-close')
+    const modalClosebtn = document.querySelector('.modal-footer button')
+
+
+    function showModal() {
+        modal.classList.add('open')
+    }
+    function hideModal() {
+        modal.classList.remove('open')
+    }
+
+
+    for (const deleteBtn of deleteBtns) {
+        deleteBtn.addEventListener('click', showModal)
+        deleteBtn.addEventListener('click', function (event) {
+            var targetofdelete = event.target.parentElement
+            var parentofdelete = targetofdelete.parentElement
+            modalClosebtn.addEventListener('click', function () {
+                parentofdelete.style.display = "none"
+            })
+        })
+    }
+
+
+    modalClose.addEventListener('click', hideModal)
+    modalClosebtn.addEventListener('click', hideModal)
+
+    // hide modal khi click ngoài vùng trống
+    modal.addEventListener('click', function (e) {
+        if (e.target == e.currentTarget) {
+            hideModal()
+        }
+    })
+
+    // modal-detail 
+    const openModelDetail = document.querySelectorAll('.js-detail')
+    const modalDetail = document.querySelector('.modal-detail')
+    const closeModelDetail = document.querySelectorAll('.js-detail-close')
+    const bodyModelDetail = document.querySelector('.detail-add')
+    for (const btnDetail of openModelDetail) {
+        btnDetail.addEventListener('click', function (event) {
+            modalDetail.classList.add('open')
+            var detail1 = event.target.parentElement
+            var detail2 = detail1.parentElement
+            var productName = detail2.querySelector('.name-product').innerText
+            var productQuantity = detail2.querySelector('.quantity-product').innerText
+            var productCost = detail2.querySelector('.cost-product').innerText
+            console.log(productCost)
+            var addtr = document.createElement('tr')
+            var trcontent = '<tr><td>' + productName + '</td>' + '<tr><td>'+ productQuantity +'</td>' + '<tr><td>'+ productCost +'</td>'
+            bodyModelDetail.innerHTML = trcontent
+
+        })
+    }
+    function Item(productName, productQuantity) {
+
+    }
+    function hideModelDetail() {
+        modalDetail.classList.remove('open')
+    }
+    for (const btnHideDetail of closeModelDetail) {
+        btnHideDetail.addEventListener('click', hideModelDetail)
+    }
+
+    // hide modal khi click ngoài vùng trống
+    modalDetail.addEventListener('click', function (e) {
+        if (e.target == e.currentTarget) {
+            hideModelDetail()
+        }
+    })
+
+
+</script>

@@ -1,0 +1,65 @@
+.content-wine {
+    margin-top: 40px;
+    &-content {
+        width: 1442px;
+        height: 1082px;
+    }
+    &-desc {
+        display: flex;
+    }
+    &-text {
+        width: 721px;
+        height: 162px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25px;
+        margin-top: 366px;
+    }
+    &-h2 {
+        font-family: "Baskerville No 2", serif;
+        margin: 0 0 50px 0;
+        line-height: 39.2px;
+        color: #ededed;
+        font-size: 28px;
+        width: 651px;
+        height: 48px;
+        text-align: left;
+        font-weight: 400;
+        position: relative;
+        left: 400px;
+        text-align: center;
+    }
+    &-p {
+        width: 651px;
+        height: 27px;
+        font-size: 17px;
+        font-family: "Baskerville No 2", serif;
+        color: #d7d7d7;
+        line-height: 27.2px;
+        margin: 0 0 20px;
+        border: none;
+        padding: 25px 20px;
+    }
+    &-a {
+        color: #ffffff;
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-size: 25.5px;
+        line-height: 40.8px;
+        text-align: center;
+        text-decoration: underline;
+        text-align: center;
+    }
+    &-italic{
+        color: #ffffff;
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-size: 25.5px;
+        line-height: 40.8px;
+        text-align: center;
+        text-decoration: underline;
+        text-align: center;
+        font-style: italic;
+    }
+}

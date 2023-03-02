@@ -1,0 +1,97 @@
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Start CSS của header */
+#header
+{
+    height : 50px;
+    background-color:#1f1f1f ;
+    position: fixed;
+    right : 0;
+    top : 0;
+    left : 0;
+}
+
+a.admin {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar-header
+{
+    margin-left: 8px;
+    float: left;
+    height: 50px;
+    padding: 12px 15px;
+    line-height: 20px;
+    text-decoration: none ;
+
+}
+
+.nav-header {
+    display: inline-flex;
+    margin-left: 70px;
+    text-decoration: none;
+    align-items: center;
+    height: 50px;
+    
+}
+
+.nav-header a{
+    text-decoration: none;
+    padding-left: 24px;
+    font-size: 16px;
+    color: white;   
+    opacity: 0.6;
+    font-family: Arial;
+    
+}
+
+.title
+{
+    margin-top: 100px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.button
+{
+    height: 30px;
+    width: 100px;
+}
+
+.table
+{
+    margin-top: 90px;
+    margin-left: 50px;
+    border-collapse: collapse;
+    width: 90%;
+    height: 70px;
+}
+
+.table, th, td
+{
+    border: 1px solid black;
+    padding : 8px;
+}
+
+.table th
+{   
+    background-color: #1f1f1f;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+}
+.table td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.img-food
+{
+    height:100px;
+    width: 150px;
+}

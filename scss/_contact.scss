@@ -1,0 +1,51 @@
+.contact {
+    width: 1441.6px;
+    height: 857px;
+    &-map {
+        width: 1441px;
+        height: 455px;
+    }
+    &-text {
+        height: 403px;
+    }
+    &-wrapper {
+        width: 1170px;
+        height: 403px;
+        padding: 50px 0px;
+        margin: 0px 136px;
+    }
+    &-forms {
+        width: 1140px;
+        height: 302px;
+        padding: 25px 25px 0px;
+    }
+    &-form {
+        width: 1090px;
+        height: 277px;
+    }
+
+    &-left {
+        width: 545px;
+        height: 229px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    &-list {
+        width: 1140px;
+        height: 302px;
+        display: flex;
+        position: relative;
+    }
+    &-right {
+        width: 545px;
+        height: 229px;
+        padding: 0px 15px;
+    }
+    &-bt_title{
+        position: relative;
+        left: 0;
+        top: -75px;
+        left: 15px;
+        z-index: 3;
+    }
+}

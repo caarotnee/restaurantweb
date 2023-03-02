@@ -1,0 +1,35 @@
+.text-wine {
+    width: 1442px;
+    height: 208px;
+    margin-top: 30px;
+    &-content {
+        width: 740px;
+        height: 208px;
+    }
+    &-title {
+        color: #ededed;
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32.2px;
+        margin: 0px 0px 20px 0;
+        margin-left: 532px;
+    }
+    &-desc {
+        width: 740px;
+        height: 208px;
+        margin-left: 360px;
+    }
+    &-p {
+        width: 740px;
+        height: 208px;
+        color: #d7d7d7;
+        font-family: "Baskerville No 2", serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 30px;
+        margin: 0px 0px 20px;
+        text-align: center;
+        border: none;
+    }
+}
